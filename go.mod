@@ -1,3 +1,3 @@
-module github.com/hexops/godiff
+module github.com/hexops/gotextdiff
 
 go 1.16
