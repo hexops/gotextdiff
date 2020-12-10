@@ -15,6 +15,13 @@ This is arguably one of the best (and most maintained) text diffing packages in 
 Assuming you want to diff `a.txt` and `b.txt`, whose contents are stored in `aString` and `bString` then:
 
 ```Go
+import (
+    "github.com/hexops/gotextdiff"
+    "github.com/hexops/gotextdiff/myers"
+)
+
+...
+
 edits := myers.ComputeEdits(span.URIFromPath("a.txt"), aString, bString)
 diff := fmt.Sprint(gotextdiff.ToUnified("a.txt", "b.txt", aString, edits))
 ```
