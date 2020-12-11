@@ -1,20 +1,21 @@
-# gotextdiff - text diffing in Go <a href="https://hexops.com"><img align="right" height="36px" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/logo_whitebg.svg"></img></a>
+# gotextdiff - unified text diffing in Go <a href="https://hexops.com"><img align="right" height="36px" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/logo_whitebg.svg"></img></a>
 
-This is a copy of the Go text diffing package that [the official Go language server gopls uses internally](https://github.com/golang/tools/tree/master/internal/lsp/diff).
+This is a copy of the Go text diffing packages that [the official Go language server gopls uses internally](https://github.com/golang/tools/tree/master/internal/lsp/diff) to generate unified diffs.
 
-This is arguably one of the best (and most maintained) text diffing packages in Go as of at least 2020.
+If you've previously tried to generate unified text diffs in Go (like the ones you see in Git and on GitHub), you may have found [github.com/sergi/go-diff](https://github.com/sergi/go-diff) which is a Go port of Neil Fraser's google-diff-match-patch code - however it ([does not support unified diffs](https://github.com/sergi/go-diff/issues/57)).
 
-(All credit goes to [the Go authors](http://tip.golang.org/AUTHORS), we're merely re-publishing their work so others can use it.)
+This is arguably one of the best (and most maintained) unified text diffing packages in Go as of at least 2020.
+
+(All credit goes to [the Go authors](http://tip.golang.org/AUTHORS), I am merely re-publishing their work so others can use it.)
 
 ## Alternatives
 
-- [github.com/sergi/go-diff](https://github.com/sergi/go-diff): A Go language port of Neil Fraser's google-diff-match-patch code ([does not support unified diffs](https://github.com/sergi/go-diff/issues/57)).
 - [github.com/andreyvit/diff](https://github.com/andreyvit/diff): Quick'n'easy string diffing functions for Golang based on github.com/sergi/go-diff.
 - [github.com/kylelemons/godebug/diff](https://github.com/kylelemons/godebug/tree/master/diff): implements a linewise diff algorithm ([inactive](https://github.com/kylelemons/godebug/issues/22#issuecomment-524573477)).
 
 ## Example usage
 
-Import the package:
+Import the packages:
 
 ```Go
 import (
@@ -42,7 +43,7 @@ diff := fmt.Sprint(gotextdiff.ToUnified("a.txt", "b.txt", aString, edits))
 
 ## API compatability
 
-We will publish a new major version anytime the API changes in a backwards-incompatible way. Because the upstream is not being developed with this being a public package in mind, API breakages may occur more often than in other Go packages.
+We will publish a new major version anytime the API changes in a backwards-incompatible way. Because the upstream is not being developed with this being a public package in mind, API breakages may occur more often than in other Go packages (but you can always continue using the old version thanks to Go modules.)
 
 ## Contributing
 
@@ -51,4 +52,3 @@ We will only accept changes made upstream, please send any contributions to the 
 ## License
 
 See https://github.com/golang/tools/blob/master/LICENSE
-
