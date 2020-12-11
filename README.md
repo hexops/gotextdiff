@@ -8,7 +8,7 @@ This is arguably one of the best (and most maintained) text diffing packages in 
 
 ## Alternatives
 
-- [github.com/sergi/go-diff](https://github.com/sergi/go-diff): A Go language port of Neil Fraser's google-diff-match-patch code.
+- [github.com/sergi/go-diff](https://github.com/sergi/go-diff): A Go language port of Neil Fraser's google-diff-match-patch code ([does not support unified diffs](https://github.com/sergi/go-diff/issues/57)).
 - [github.com/andreyvit/diff](https://github.com/andreyvit/diff): Quick'n'easy string diffing functions for Golang based on github.com/sergi/go-diff.
 - [github.com/kylelemons/godebug/diff](https://github.com/kylelemons/godebug/tree/master/diff): implements a linewise diff algorithm ([inactive](https://github.com/kylelemons/godebug/issues/22#issuecomment-524573477)).
 
