@@ -8,11 +8,6 @@ This is arguably one of the best (and most maintained) unified text diffing pack
 
 (All credit goes to [the Go authors](http://tip.golang.org/AUTHORS), I am merely re-publishing their work so others can use it.)
 
-## Alternatives
-
-- [github.com/andreyvit/diff](https://github.com/andreyvit/diff): Quick'n'easy string diffing functions for Golang based on github.com/sergi/go-diff.
-- [github.com/kylelemons/godebug/diff](https://github.com/kylelemons/godebug/tree/master/diff): implements a linewise diff algorithm ([inactive](https://github.com/kylelemons/godebug/issues/22#issuecomment-524573477)).
-
 ## Example usage
 
 Import the packages:
@@ -44,6 +39,11 @@ diff := fmt.Sprint(gotextdiff.ToUnified("a.txt", "b.txt", aString, edits))
 ## API compatability
 
 We will publish a new major version anytime the API changes in a backwards-incompatible way. Because the upstream is not being developed with this being a public package in mind, API breakages may occur more often than in other Go packages (but you can always continue using the old version thanks to Go modules.)
+
+## Alternatives
+
+- [github.com/andreyvit/diff](https://github.com/andreyvit/diff): Quick'n'easy string diffing functions for Golang based on github.com/sergi/go-diff.
+- [github.com/kylelemons/godebug/diff](https://github.com/kylelemons/godebug/tree/master/diff): implements a linewise diff algorithm ([inactive](https://github.com/kylelemons/godebug/issues/22#issuecomment-524573477)).
 
 ## Contributing
 
