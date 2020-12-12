@@ -47,7 +47,7 @@ We will publish a new major version anytime the API changes in a backwards-incom
 
 ## Contributing
 
-We will only accept changes made upstream, please send any contributions to the upstream instead!
+We will only accept changes made [upstream](https://github.com/golang/tools/tree/master/internal/lsp/diff), please send any contributions to the upstream instead! Compared to the upstream, only import paths will be modified (to be non-`internal` so they are importable.) The only thing we add here is this README.
 
 ## License
 
