@@ -2,7 +2,7 @@
 
 This is a copy of the Go text diffing packages that [the official Go language server gopls uses internally](https://github.com/golang/tools/tree/master/internal/lsp/diff) to generate unified diffs.
 
-If you've previously tried to generate unified text diffs in Go (like the ones you see in Git and on GitHub), you may have found [github.com/sergi/go-diff](https://github.com/sergi/go-diff) which is a Go port of Neil Fraser's google-diff-match-patch code - however it ([does not support unified diffs](https://github.com/sergi/go-diff/issues/57)).
+If you've previously tried to generate unified text diffs in Go (like the ones you see in Git and on GitHub), you may have found [github.com/sergi/go-diff](https://github.com/sergi/go-diff) which is a Go port of Neil Fraser's google-diff-match-patch code - however it [does not support unified diffs](https://github.com/sergi/go-diff/issues/57).
 
 This is arguably one of the best (and most maintained) unified text diffing packages in Go as of at least 2020.
 
