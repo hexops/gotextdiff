@@ -1,4 +1,4 @@
-# gotextdiff - unified text diffing in Go <a href="https://hexops.com"><img align="right" height="36px" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/logo_whitebg.svg"></img></a>
+# gotextdiff - unified text diffing in Go <a href="https://hexops.com"><img align="right" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/readme.svg"></img></a>
 
 This is a copy of the Go text diffing packages that [the official Go language server gopls uses internally](https://github.com/golang/tools/tree/master/internal/lsp/diff) to generate unified diffs.
 
