@@ -208,3 +208,8 @@ func (u Unified) Format(f fmt.State, r rune) {
 		}
 	}
 }
+
+// Helper to get the stringified diff directly.
+func (u Unified) String() string {
+	return fmt.Sprint(u)
+}
