@@ -36,7 +36,7 @@ diff := fmt.Sprint(gotextdiff.ToUnified("a.txt", "b.txt", aString, edits))
 +bar
 ```
 
-## API compatability
+## API compatibility
 
 We will publish a new major version anytime the API changes in a backwards-incompatible way. Because the upstream is not being developed with this being a public package in mind, API breakages may occur more often than in other Go packages (but you can always continue using the old version thanks to Go modules.)
 
